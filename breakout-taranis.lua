@@ -102,7 +102,7 @@ local function update(deltaTime)
       ball.dy = -ball.dy
    else
       dy_changed = false
-      dx_changed = true
+      dx_changed = false
       -- check for collision with bricks
       for i, brick in pairs(bricks) do
 	 if brick["visible"] == true then
